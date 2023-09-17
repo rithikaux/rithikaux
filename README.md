@@ -1,8 +1,9 @@
-# Portfolio
+- 👋 Hi, I’m @rithikaux
+- 👀 I’m interested in UI/UX
+- 🌱 I’m currently learning UX
+- 📫 How to reach me : rithikaux@gmail.com
 
-___
-
-Special thank you to [@webdiscus](https://github.com/webdiscus) for taking the time to optimize my webpack configuration. If you use webpack, be sure to check out [html-bundler-webpack-plugin](https://github.com/webdiscus/html-bundler-webpack-plugin)!
-
-___
-![screen](screenshots/perf2.jpg)
+<!---
+rithikaux/rithikaux is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+You can click the Preview link to take a look at your changes.
+--->
