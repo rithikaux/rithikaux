@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="color-scheme" content="dark">
+  <meta name="author" content="Chase Ottofy">
+  <meta name="description" content="Portfolio for Chase Ottofy">
+  <meta name="keywords"
+    content="chase ottofy portfolio, portfolio, chase, ottofy, rithikaux, chase ottofy, chase ottofy portfolio, front end developer, front end, javascript, react developer, react">
+  <meta property="og:title" content="Chase Ottofy Portfolio">
+  <meta property="og:description" content="Portfolio for Chase Ottofy">
+  <meta property="og:site_name" content="Portfolio">
+  <meta property="og:url" content="https://rithikaux.github.io/Portfolio">
+  <meta name="robots" content="index, follow">
+  <title>Chase Ottofy</title>
+  <link type="image/png" href="./images/favicon/favicon-32x32.png" rel="icon" sizes="32x32">
+  <link href="style.scss" rel="stylesheet">
+  <script src="index.js" defer="defer"></script>
+</head>
+
+<body class="body theme__dark">
+  <!-- HEADER GRADIENT -->
+  <aside class="gradient-overlay--one gradient-noir"></aside>
+  <svg style="position:absolute;top:0;left:0;height:0;width:0;z-index:-1;opacity:0;visibility:hidden;">
+    <filter id='grainy' x='0' y='0' width='100%' height='100%'>
+      <feTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='3' seed='5' stitchTiles='stitch'
+        result='noise' />
+    </filter>
+  </svg>
+  <!-- HEADER (FIXED)-->
+  <header class="header header-animate">
+    <div class="header-wrapper">
+      <a class="header-logo" data-href="#header-top" title="Scroll To Top" aria-label="button" href="#top">
+        Rithika
+      </a>
+
+      <div class="nav-wrapper">
+        <nav class="header-nav">
+          <ul class="nav-menu">
+            <li>
+              <a class="nav-menu--link" data-scroll-to="0" href="#projects" title="Scroll to projects">Projects</a>
+            </li>
+            <li>
+              <a class="nav-menu--link" data-scroll-to="1" href="#skills" title="Scroll to skills">Skills</a>
+            </li>
+            <li class="nav-multi__contact">
+              <a class="nav-menu--link menu-btn--multi contact-nav--btn" data-scroll-to="2" href="#contact"
+                title="Contact Menu & context">
+                <span>Contact</span>
+                <img class="nav-multi--caret" src="./images/svg/caretdown.svg" alt>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="header-right">
+        <aside class="theme-modal">
+          <div class="theme-switch">
+            <span>
+              <input class="theme-input" id="theme-switch-dark" name="radio-theme" type="radio" value="dark">
+              <label class="theme-label" for="theme-switch-dark" title="Switch to dark mode"
+                aria-label="Switch to dark mode">
+                <img src="./images/svg/moon.svg" alt="dark">
+              </label>
+            </span>
+
+            <span>
+              <input class="theme-input" id="theme-switch-light" name="radio-theme" type="radio" value="light">
+              <label class="theme-label theme-label--two" for="theme-switch-light" title="Switch to light mode"
+                aria-label="Switch to light mode">
+                <img src="./images/svg/sun.svg" alt="light">
+              </label>
+            </span>
+          </div>
+        </aside>
+
+      </div>
+    </div>
+  </header>
+
+  <!-- SECTION: INTRO -->
+  <section class="intro-container">
+    <div class="intro-header">
+      <h1 class="intro-header__title">CHASE OTTOFY</h1>
+      <div class="intro-header__subtitles">
+        <div class="intro-header__subtitle intro-header__subtitle--one">
+          <h2 class="intro-header__subtitle--text">Front-end</h2>
+        </div>
+        <div class="intro-header__subtitle intro-header__subtitle--two">
+          <h2 class="intro-header__subtitle--text ih-last">Webdev</h2>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MAIN (projects > skills > about > contact) -->
+  <main class="main">
+    <aside class="section-divider"></aside>
+
+    <!-- SECTION : PROJECTS -->
+    <article class="section-container projects-container" id="projects-top">
+
+      <div class="section-title">
+        <h2>Projects</h2>
+      </div>
+
+      <!-- <aside class="floating-menu"></aside> -->
+
+      <div class="projects-grid">
+
+        <!-- calendar project -->
+        <div class="project-cell project-calendar" data-proj-title="Google Calendar 2.0">
+          <div class="project-cell__content">
+            <div class="project-content__header"></div>
+
+            <div class="project-content__subheader">
+              <div class="pc__subheader--search" data-tooltip="Go to live site">
+                <a class="cal-search" data-search-after="day"
+                  href="https://rithikaux.github.io/google-calendar-clone-vanilla/" title="Go to Live Site"
+                  target="_blank" rel="noreferrer"><img class="img-icon search-lock" src="./images/svg/lock.svg"
+                    alt>Google Calendar 2.0</a>
+                <span class="search-arrowright">
+                  <img class="img-icon" src="./images/svg/arrowRight.svg" alt>
+                </span>
+              </div>
+            </div>
+
+            <div class="project-content__body"></div>
+          </div>
+
+          <div class="project-cell__footer">
+            <div class="project-footer__titles">
+              <div class="pf-stacks"></div>
+            </div>
+            <div class="project-footer__content"></div>
+          </div>
+        </div>
+        <div class="project-divider">
+          <span class="vertical-line"></span>
+        </div>
+        <!--  -->
+
+        <!-- blog project -->
+        <div class="project-cell blogcm">
+          <div class="project-cell__content">
+            <div class="project-content__header">
+              <div class="project-content__subheader subheader-sm"></div>
+            </div>
+            <div class="project-content__body"></div>
+          </div>
+          <div class="project-cell__footer">
+            <div class="project-footer__titles">
+              <div class="pf-stacks"></div>
+            </div>
+            <div class="project-footer__content"></div>
+          </div>
+        </div>
+        <div class="project-divider">
+          <span class="vertical-line"></span>
+        </div>
+        <!--  -->
+
+        <!-- monthpicker project -->
+        <div class="project-cell monthpickercm">
+          <div class="project-cell__content">
+            <div class="project-content__header">
+              <div class="project-content__subheader subheader-sm"></div>
+            </div>
+            <div class="project-content__body"></div>
+          </div>
+          <div class="project-cell__footer">
+            <div class="project-footer__titles">
+              <div class="pf-stacks"></div>
+            </div>
+            <div class="project-footer__content"></div>
+          </div>
+        </div>
+        <div class="project-divider">
+          <span class="vertical-line"></span>
+        </div>
+        <!--  -->
+
+        <!-- markdown project -->
+        <div class="project-cell markdowncm">
+          <div class="project-cell__content">
+            <div class="project-content__header">
+              <div class="project-content__subheader subheader-sm"></div>
+            </div>
+            <div class="project-content__body"></div>
+          </div>
+          <div class="project-cell__footer">
+            <div class="project-footer__titles">
+              <div class="pf-stacks"></div>
+            </div>
+            <div class="project-footer__content"></div>
+          </div>
+        </div>
+        <div class="project-divider">
+          <span class="vertical-line"></span>
+        </div>
+        <!--  -->
+        <!--  -->
+        <!-- end of project grid -->
+      </div>
+    </article>
+
+    <!-- SECTION: SKILLS -->
+    <aside class="section-divider"></aside>
+    <aside class="section-gradient--l"></aside>
+    <article class="section-container skills-container" id="skills-top">
+      <div class="skills-top">
+        <div class="section-title">
+          <h2>Skills</h2>
+        </div>
+      </div>
+      <div class="skills-grid">
+        <div class="skills-cell">
+          <span>HTML</span>
+          <img class="img-icon" src="./images/svg/html.svg" alt="">
+        </div>
+        <div class="skills-cell">
+          <span>CSS</span>
+          <img class="img-icon" src="./images/svg/css.svg" alt="">
+        </div>
+        <div class="skills-cell sc-off">
+          <span>JavaScript</span>
+          <img class="img-icon" src="./images/svg/vanilla.svg" alt="">
+        </div>
+        <div class="skills-cell sc-off">
+          <span>TypeScript</span>
+          <img class="img-icon" src="./images/svg/typescript.svg" alt="">
+        </div>
+        <div class="skills-cell sc-off">
+          <span>React</span>
+          <img class="img-icon" src="./images/svg/react.svg" alt="">
+        </div>
+        <div class="skills-cell sc-off">
+          <span>Next.js</span>
+          <img class="img-icon" src="./images/svg/next.svg" alt="">
+        </div>
+        <div class="skills-cell sc-off">
+          <span>Webpack</span>
+          <img class="img-icon" src="./images/svg/webpack.svg" alt="">
+        </div>
+        <div class="skills-cell">
+          <span>Wordpress</span>
+          <img class="img-icon" src="./images/svg/wordpress.svg" alt="">
+        </div>
+        <div class="skills-cell">
+          <span>Photoshop <br>Illustrator</span>
+          <img class="img-icon" src="./images/svg/adobe.svg" alt="">
+        </div>
+        <div class="skills-cell">
+          <span>Figma</span>
+          <img class="img-icon" src="./images/svg/figma.svg" alt="">
+        </div>
+      </div>
+    </article>
+    <aside class="section-gradient--r"></aside>
+
+    <!-- SECTION: CONTACT -->
+    <aside class="section-divider"></aside>
+    <div class="section-container contact-container" id="contact-top">
+
+      <div class="contact-menu__body">
+        <!-- LEFT -->
+        <div class="cm-left">
+          <div class="cm-left__header">
+            <h3>Contact /</h3>
+            <h3>Links</h3>
+          </div>
+          <div class="cm-left__body"></div>
+          <div class="cm-left__footer">
+            <div class="cm-left__footer-relocate">
+              willing to relocate
+            </div>
+            <div class="cm-left__footer-location">
+              <span>Colorado</span>
+              <span class="cm-left--time">MST: 12:00 AM</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- RIGHT -->
+        <div class="cm-right">
+          <div class="cm-right--top">
+            <!-- GITHUB BADGE -->
+            <div class="cm-right--top__cell badge-github">
+              <a class="cm-right--top__cell-badge" href="https://github.com/rithikaux" title="Github Profile"
+                target="_blank" rel="noreferrer">
+                <div class="badge-top">
+                  <div class="badge-top--profile">
+                    <div class="badge-top--container--svg">
+                      <img class="img-icon cm-body--img" src="./images/svg/githuboutline.svg" alt>
+                    </div>
+                    <span data-acc="@rithikaux">@rithikaux</span>
+                  </div>
+                </div>
+                <div class="badge-footer">
+                  <img class="img-icon" src="./images/svg/bentarrow.svg" alt>
+                  <span>Github</span>
+                </div>
+              </a>
+            </div>
+
+            <!-- YOUTUBE BADGE-->
+            <div class="cm-right--top__cell badge-youtube">
+              <a class="cm-right--top__cell-badge" href="https://www.youtube.com/channel/UCawR0cR_xHGCnKy3Vg6yc7g"
+                title="YouTube channel" target="_blank" rel="noreferrer">
+                <div class="badge-top">
+                  <div class="badge-top--profile">
+                    <img class="badge-mug cm-body--img" src="./images/mugshot/YTmug1.webp" alt
+                      style="height:3rem;width:3rem;">
+                    <span class="badge-prof" data-acc="3.6k subs" data-bef="">@otto-fy</span>
+                  </div>
+                </div>
+
+                <div class="badge-footer">
+                  <img class="img-icon" src="./images/svg/bentarrow.svg" alt>
+                  <span>YouTube</span>
+                </div>
+              </a>
+            </div>
+
+            <!-- CODEPEN BADGE -->
+            <div class="cm-right--top__cell badge-codepen">
+              <a class="cm-right--top__cell-badge" href="https://codepen.io/rithikaux" title="Codepen Profile"
+                target="_blank" rel="noreferrer">
+                <div class="badge-top">
+                  <div class="badge-top--profile">
+                    <div class="badge-top--container--svg">
+                      <img class="img-icon cm-body--img" src="./images/svg/codepen.svg" alt>
+                    </div>
+                    <span data-acc="@rithikaux">@rithikaux</span>
+                  </div>
+                </div>
+
+                <div class="badge-footer">
+                  <img class="img-icon" src="./images/svg/bentarrow.svg" alt>
+                  <span>Codepen</span>
+                </div>
+              </a>
+            </div>
+
+            <!-- CODEWARS BADGE -->
+            <div class="cm-right--top__cell badge-codewars">
+              <a class="cm-right--top__cell-badge" href="https://www.codewars.com/users/protto" title="Codewars Profile"
+                target="_blank" rel="noreferrer">
+                <div class="badge-top">
+                  <div class="badge-top--profile">
+                    <img class="badge-mug cm-body--img" src="./images/mugshot/codewarsmug1.webp" alt
+                      style="height:3rem;width:3rem;">
+                    <span class="badge-prof" data-acc="Top 0.2%" data-bef="#1,200">@protto</span>
+                  </div>
+                </div>
+
+                <div class="badge-footer">
+                  <img class="img-icon img-bent-arrowsrc" src="./images/svg/bentarrow.svg" alt>
+                  <span>Codewars</span>
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <div class="cm-right--bottom cm-right--bottom__body">
+            <div class="cm-right--bottom__cell">
+              <span>ottofy@zohomail.com</span>
+              <div class="cm-right--bottom__cell-icons">
+                <a class="mailto-link cm-email-goto" href="mailto:ottofy@zohomail.com" title="Open Mail-to">
+                  <img class="img-icon cm-img--icon" src="./images/svg/mailto.svg" alt>
+                </a>
+                <button class="cm-copy cm-copy--email" title="Copy E-mail address" aria-label="button">
+                  <img class="img-icon cm-img--icon" src="./images/svg/copy.svg" alt>
+                </button>
+              </div>
+            </div>
+
+            <div class="cm-right--bottom__cell">
+              <span>970-988-2548</span>
+              <div class="cm-right--bottom__cell-icons">
+                <button class="cm-copy cm-copy--phone" data-text="9709882548" title="Copy Phone Number"
+                  aria-label="button">
+                  <img class="img-icon" src="./images/svg/copy.svg" alt>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- SECTION: CONTACT-FORM -->
+    <aside class="section-divider"></aside>
+    <article class="contact-form--container">
+
+      <div class="section-title">
+        <h3>Send Direct Message</h3>
+        <span class="cf-br" style="height:1rem;"></span>
+      </div>
+
+      <div class="contact-form--wrapper">
+        <form class="contact-form" data-csd="false">
+          <div class="form-group">
+            <label for="form-name">Name *</label>
+            <input class="form-name--input" id="form-name" name="messageName" type="text" minlength="1" maxlength="200"
+              required>
+          </div>
+
+          <input class="form-hp--one" type="checkbox" name="contact_me_by_fax_only" value="1"
+            style="display:none !important" tabindex="-1" autocomplete="off">
+
+          <div class="form-group">
+            <label>Choose the best for response *</label>
+
+            <div class="contact-method-group">
+              <span>
+                <input class="contact-option--input" id="contact-method--email" name="contactMethod" type="radio"
+                  value="email" checked>
+                <label for="contact-method--email">Email</label>
+              </span>
+
+              <span>
+                <input class="contact-option--input" id="contact-method--phone" name="contactMethod" type="radio"
+                  aria-label value="phone">
+                <label for="contact-method--phone">Phone</label>
+              </span>
+            </div>
+
+            <input class="form-contact--input" name="messageContactVal" type="email"
+              placeholder="Enter your email address" minlength="1" maxLength="200" required>
+          </div>
+
+          <div class="form-group">
+            <label for="form-message">Message *</label>
+            <textarea class="form-message--input" id="form-message" name="messageVal" rows="4" maxlength="500"
+              minlength="1" required></textarea>
+          </div>
+
+          <div class="form-group form-group--submit">
+            <button class="submit-form--btn" type="submit" tabindex="-1" disabled>Submit</button>
+          </div>
+        </form>
+      </div>
+    </article>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-links">
+      <a href="https://github.com/rithikaux" title="Github Profile" target="_blank"
+        rel="noreferrer">github.com/rithikaux</a>
+      <a class="mailto-link" href="mailto:ottofy@zohomail.com" title="Open Mail-to">ottofy@zohomail.com</a>
+    </div>
+    <pre class="ascii-wrapper"></pre>
+  </footer>
+
+  <!-- TOAST -->
+  <aside class="toast-wrapper"></aside>
+</body>
+
+</html>

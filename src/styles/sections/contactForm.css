@@ -1,0 +1,187 @@
+.contact-form--container {
+  position: relative;
+  width: 100%;
+  z-index: 3;
+  background-color: var(--grey3);
+  background-image: linear-gradient(var(--grey3),
+      var(--grey3)),
+    linear-gradient(200deg,
+      var(--blue3) 0,
+      var(--blue1) 20%,
+      rgba(121, 40, 202, 0) 80%);
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+  background-size: 100% 100%, 100% 100%;
+  background-position: 0 0, 0 0;
+  background-repeat: no-repeat;
+  padding: .125rem;
+}
+
+.disable-form {
+  pointer-events: none !important;
+  user-select: none !important;
+}
+
+.disable-contact-form {
+  display:none;
+}
+
+.contact-form--container .section-title {
+  padding-top: 4rem;
+}
+
+.contact-form--container .section-title h3 {
+  font-size: 1.5rem;
+}
+
+.contact-form--wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.contact-form {
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: 2rem;
+  box-shadow: inset 0 1px 1px -1px #3b3b3b;
+  border-radius: 20px;
+  max-width: 560px;
+  width: 100%;
+  border: 1px solid transparent;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+}
+
+.success-message {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 9999;
+  pointer-events: none;
+  user-select: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--offsetblack1);
+  font-size: .875rem;
+  color: var(--white1);
+}
+
+.success-message span {
+  animation: pulse 1.5s infinite;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-size: .875rem;
+  color: var(--white2);
+  font-weight: 500;
+}
+
+.form-group {
+  padding: 0 2rem;
+}
+
+.contact-form .form-group:first-child {
+  padding-top: 2rem;
+}
+
+.contact-form .form-group:last-child {
+  padding-bottom: 2rem;
+}
+
+.contact-method-group {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+  padding: 4px;
+  border: 1px solid var(--black2);
+  border-radius: 5px;
+  width: 10rem;
+}
+
+.contact-method-group span {
+  width: 5rem;
+  height: 1.75rem;
+  position: relative;
+}
+
+.contact-method-group span label {
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  line-height: 1.75rem;
+  border: none;
+  cursor: pointer;
+  background: transparent;
+  font-weight: 500;
+  color: var(--white1);
+  border-radius: 3px;
+}
+
+.contact-method-group span label:hover {
+  opacity: .7;
+  transition: var(topac1);
+}
+
+.contact-method-group span input {
+  appearance: none;
+  border: none;
+  opacity: 0;
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  width: 100%;
+  outline: none;
+  position: absolute;
+  z-index: -1;
+}
+
+.contact-method-group span input:checked + label {
+  background: var(--black2);
+  color: var(--white1);
+  opacity: 1;
+}
+
+.form-group--submit {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.submit-form--btn {
+  background: transparent;
+  border: 1px solid var(--black2);
+  color: var(--white2);
+  padding: 0.625rem 2.25rem;
+  border-radius: 5px;
+  font-size: .875rem;
+  cursor: not-allowed;
+  user-select: none;
+  position:relative;
+}
+
+.btn-allow {
+  color: var(--white1);
+  background: var(--black0);
+  border: 1px solid var(--blue1);
+  transition: var(--tbg1);
+  cursor: pointer;
+  pointer-events: all;
+  user-select: all;
+}
+
+.btn-allow:hover {
+  background: var(--grey2);
+}
+
+.invalid {
+  border: 1px solid var(--red1);
+}

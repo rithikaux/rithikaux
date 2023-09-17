@@ -1,0 +1,25 @@
+.spinner-wrapper {
+  height: 4rem;
+  width: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.spinner {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  transform: translate(2rem, 2rem);
+}
+
+.spinner-cell {
+  animation: spin 1.2s linear infinite;
+  background: var(--grey1);
+  border-radius: 5px;
+  height: 8%;
+  left: -10%;
+  position: absolute;
+  top: -3.9%;
+  width: 24%;
+}

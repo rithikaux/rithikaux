@@ -1,0 +1,73 @@
+.project-content__body {
+  position: relative;
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  border: none;
+  padding-top: var(--ap2);
+}
+
+.project-image__calendar,
+.proj-img-sm {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  aspect-ratio: var(--ap);
+  object-fit: cover;
+  object-position: center;
+  image-rendering: -o-crisp-edges;
+  filter: contrast(1.1) grayscale(10%);
+}
+
+.hide-img {
+  pointer-events: none;
+  user-select: none;
+  appearance: none;
+  z-index: -1;
+  opacity: 0;
+}
+
+.fade-img--in {
+  animation: fade-img .2s forwards;
+}
+
+.fade-img--out {
+  animation: fade-img .1s reverse forwards;
+}
+
+.img-skeleton {
+  position: absolute;
+  background: rgba(0,0,0,.4);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@keyframes fade-img {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .project-content__body {
+    padding-top: calc(3 / 4 * 100%);
+  }
+
+  .project-image__calendar img,
+  .project-img-sm img {
+    aspect-ratio: calc(4/3);
+  }
+}

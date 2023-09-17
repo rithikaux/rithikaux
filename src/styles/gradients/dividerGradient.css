@@ -1,0 +1,67 @@
+/* ============================
+  DIVIDER
+============================ */
+.section-divider {
+  filter: brightness(1.6);
+  box-shadow: 0 0 0 1px var(--dividerBg);
+  height: 1px;
+  margin: 0 auto;
+  width: 100%;
+  position: relative;
+  z-index: 6;
+}
+
+.section-gradient-left {
+  position: absolute;
+  top:0;
+  left:0;
+  filter: blur(48px);
+  border-radius: 25%;
+  min-height: 4rem;
+  mix-blend-mode:darken;
+  pointer-events: none;
+  user-select: none;
+  width: 100%;
+  opacity: 1;
+  background: linear-gradient(
+    to bottom,
+    transparent,
+    var(--grey1),
+    var(--grey2),
+    var(--grey1),
+    transparent
+  );
+  z-index: 2;
+  margin: 0 auto;
+}
+
+.section-gradient--l,
+.section-gradient--r {
+  border-radius: 100%;
+  margin-top: -8px;
+  mix-blend-mode: normal;
+  pointer-events: none;
+  user-select: none;
+  filter: blur(46px);
+  width: 100%
+}
+
+.section-gradient--l {
+  background: var(--blue1);
+  min-height: 24px;
+  position: relative;
+  z-index: 7
+}
+
+.section-gradient--r{
+  background: var(--blue3);
+  position: relative;
+  min-height: 16px;
+  z-index: 2
+}
+
+.theme__light .section-gradient--l,
+.theme__light .section-gradient--r {
+  opacity: .2;
+  background: var(--white1);
+}
